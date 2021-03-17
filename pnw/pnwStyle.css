@@ -1,0 +1,29 @@
+
+
+.title{
+  background-image: url(titleTahoma.jpeg);
+  background-position: center;
+  color: black;
+  font-size: 60px;
+  font-style: Verdana sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.topnav{
+  background-color: black;
+  font-style: Helvetica, sans-serif;
+  font-size: 19px;
+
+}
+
+.h1{
+
+
+
+}
+.column{
+  float: left;
+
+
+}
