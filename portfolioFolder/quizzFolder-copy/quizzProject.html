@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="quizzProject.css" type="text/css" rel="stylesheet">
+
+    <title>Which college is right for you?</title>
+  </head>
+  <body>
+    <div class="mainTransition">
+    <img src="clickHere.png" height="50" width="150">
+  </div>
+    <div class= main>
+Which college is right for you? Answer these questions to find out...
+</div><br>
+  <div class=quizStyle>
+  <!--start of quiz questions-->
+<center><form>
+<label for="user">What did you eat on Thursay afternoon?</label>
+<input maxlength="100" type="text" name="username" id="user">
+<br>
+<b><u><p>About the campus</p></u></b>
+<label for="campusSize"><u>Size</u></label>
+  <select name="select" id="campusSize">
+    <option name="option1" id="option1">Tiny(< 1,000)</option>
+    <option name="option2" id="option2">Small(1,000-7,000)</option>
+    <option name="option3" id="option3">Large(7,000-18,000)</option>
+    <option name="option4" id="option4">Huge(18,000-30,000+)</option>
+    <option name="option5" id="option5">No preference</option>
+  </select>
+    <br>
+    <p><u>Amenities</u></p>
+  <input id="campusGym" type="radio" name="campus">
+  <label for="campusGym">Full Gym</label>
+  <input id="campusGreen" type="radio" name="campus">
+  <label for="campusGreen">Campus Greenery</label>
+  <input id="campusDorm1" type="radio" name="campus">
+  <label for="campusDorm1">Single Dorm</label>
+  <input id="campusDorm2" type="radio" name="campus">
+  <label for="campusDorm2">Shared Dorm</label>
+<br><br>
+<a href="https://colonnadeapartments.stanford.edu/prospective-residents/amenities/fitness"
+target="_blank">
+<img src="stanfordGym.png">
+</a>
+
+<b><u><p>About the people</p></u></b>
+<label for="famousAlumni"><u>Famous Alumni?</u></label><br><br>
+  <t>Ew... no thanks</t><input id="noFamous" type="radio" name="Famous Alumni">
+  <t>Yes of course, silly</t><input id="yesFamous" type="radio" name="Famous Alumni">
+<br>
+<!--"pos1"&"pos2" are divs for each photo. hyperlinked with sources-->
+<div class="pos1">
+<a href="https://www.spreadshirt.com/shop/design/ew+people+pink+skull+funny+sarcastic+anti-social+mens+premium+t-shirt-D5acacab8aa0c6d3a4ba3f15c?sellable=qrBmr1QnZ1UgXGEGApbB-812-7"
+target="_blank">
+  <img src="ewPeople.jpeg" height="155" width="150">
+</a>
+</div>
+<div class="pos2">
+<a href="http://www.quickmeme.com/meme/36fvgj" target="_blank">
+<img src="ofCourse.jpeg" height="155" width="150">
+</a>
+</div>
+<br>
+<br>
+<br>
+<div>
+<input type="button" value="Submit~" onclick="showInput();">
+</div>
+</form></center></div>
+
+<div id="results">
+  <p>Okay stinky
+    <span id="eatUser"></span>, so here's your result.
+     <br>
+     <span id="finalUni"></span>
+     <br>
+     <span id="points"></span>
+
+   </p>
+</div>
+<!--start of JavaScript-->
+<script language="JavaScript">
+  function showInput(){
+      var r = document.getElementById('results');
+      r.style.display = "block";
+/*username input script line 73*/
+    document.getElementById('eatUser').innerHTML = document.getElementById("user").value;
+                 var points = 0;
+                 if (document.getElementById('campusGym').checked)
+                 {
+                   var points = points + 1;
+                 };
+                 if (document.getElementById('campusGreen').checked)
+                 {
+                   var points = points + 2;
+                 };
+                 if (document.getElementById('campusDorm1').checked)
+                 {
+                   var points = points + 3;
+                 };
+                 if (document.getElementById('campusDorm2').checked)
+                 {
+                   var points = points + 4;
+                 };
+                 if (document.getElementById('option1').checked)
+                 {
+                   var points = points + 0;
+                 };
+                 if (document.getElementById('option2').checked)
+                 {
+                   var points = points + 0;
+                 };
+                 if (document.getElementById('option3').checked)
+                 {
+                 var points = points + 0;
+                 }
+                 if (document.getElementById('option4').checked)
+                 {
+                 var points = points + 0;
+                 }
+                 if (document.getElementById('option5').checked)
+                 {
+                 var points = points + 0;
+                 }
+                 if (points == 1){
+                   document.getElementById('finalUni').innerHTML = "Congrats ! You should go to MIT";
+                 }
+                 if (points == 2){
+                   document.getElementById('finalUni').innerHTML = "Congrats ! You should go to Uniersity of Florida";
+                 }
+                 if (points == 3){
+                   document.getElementById('finalUni').innerHTML = "Congrats ! You should go to University of Texas";
+                 }
+                 if (points == 4){
+                   document.getElementById('finalUni').innerHTML = "Congrats ! You should go to UCLA";
+                 }
+
+              /*
+              if (numTop = 500) {
+             document.getElementById('finalUni').innerHTML = "Please reselect campus size for us to have a more precise result for you !";}*/
+
+             alert('worked') }
+</script>
+<br><br><br>
+<div class="quizStyle">
+<a href="https://steamcommunity.com/workshop/filedetails/?id=1449443826">
+  "Click Here" animation origin.</a>
+</div>
+
+  </body>
+</html>
