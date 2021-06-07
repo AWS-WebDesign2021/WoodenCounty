@@ -1,0 +1,62 @@
+/*write comments in css like this*/
+
+.mainTransition{
+  background-position: url('clickHere.png');
+/*animation assignment 'animation-name'*/
+  animation-name: mainSlide;
+  animation-duration: 5s;
+  position: relative;
+}
+.main{
+  background-color: firebrick;
+  width: 99.5%;
+  font-family: Verdana, sans-serif;
+  font-size: 30px;
+  color: darkkhaki;
+  text-align: left;
+  padding: 10px;
+/*gradient code line 19*/
+  background-image: linear-gradient(to bottom right, red, blue);
+}
+/*code for animation*/
+@keyframes mainSlide {
+  0% {left: 0px;}
+  50% {left: 900px;}
+  100% {left: 0px;}
+}
+/*the reason the quiz itself isn't in arial or whatever default font & size
+'.quizStyle'*/
+.quizStyle{
+  font-family: Verdana, sans-serif;
+  font-size: relative;
+}
+/*unnecessary; photo layout no bueno '.greenPhoto'*/
+.greenPhoto{
+  text-align: left;
+}
+/*style for display once choices are submitted '#results'*/
+  #results {
+    padding: 50px;
+    display: none;
+    background-color: blue;
+    margin-top: 20px;
+    font-size: 18;
+    color: white;
+  }
+.pos1{
+  float: left;
+  width: 47%;
+  text-align: center;
+  padding-right: 10px;
+}
+.pos2{
+  float: left;
+  width: 47%;
+  text-align:center;
+  padding-left: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

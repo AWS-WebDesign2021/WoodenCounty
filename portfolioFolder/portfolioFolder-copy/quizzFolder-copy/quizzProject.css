@@ -21,7 +21,7 @@
 /*code for animation*/
 @keyframes mainSlide {
   0% {left: 0px;}
-  50% {left: 1100px;}
+  50% {left: 900px;}
   100% {left: 0px;}
 }
 /*the reason the quiz itself isn't in arial or whatever default font & size

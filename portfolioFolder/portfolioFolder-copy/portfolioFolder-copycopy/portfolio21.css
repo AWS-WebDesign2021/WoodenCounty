@@ -1,0 +1,191 @@
+/*comments*/
+/*navigation bar style*/
+.aquaBG{
+  background-color: #13A699;
+  padding: 20px;
+  padding-bottom: 50px;
+  font-family: monospace;
+  font-size: 20px;
+
+}
+.LBlueBG{
+  background-color: #AAF0D1;
+  padding: 110px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  font-family: monospace;
+  font-size: 15px;
+  height: 970px;
+}
+
+.portfolio21Nav{
+  background-color: #FFF7ED;
+  padding: 15px;
+  font: black;
+  font-family: monospace;
+  font-size: 15px;
+}
+/*how previous webpages assignments appear within Portfolio webpage*/
+.embedPage{
+  position: center;
+  background-color: white;
+  width: 1100px;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #FFF7ED;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 15px 15px;
+  z-index: 1;
+
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.about{
+  font-size:16;
+  font-family: monospace;
+  padding: 100px;
+  background-color: #FFD708;
+}
+/*GREAT JOB NADINE*/
+.about-h1{
+  font-size: 20px;
+  font-family: monospace;
+}
+/*PHOTO GALLERY CSS STARTS HERE*/
+.gallery {
+  margin: 60px;
+  border: 2px solid black;
+  float: left;
+  width: 200px;
+  background-color: white;
+  align: center;
+}
+.gallery:hover {
+  border: 2px solid #FFF7ED;
+  animation-name: zoom;
+  animation-duration: 6s;
+}
+@keyframes zoom {
+  0% {transform: scale(inherit);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(inherit);}
+}
+
+.gallery img {
+  width: 100%;
+  height: inherit;
+  align: center;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*PACIFIC NORTHWEST CSS STARTS
+.title{
+  background-image: url(titleTahomacopy.jpeg);
+  background-position: center;
+  color: white;
+  font-size: 55px;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 5px 5px 2px black;
+}
+  .topnav {
+    overflow: hidden;
+    background-color: green;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .column{
+    float: left;
+    background-color: tan;
+    padding-top: 10px;
+    padding-bottom:100px;
+    border-style: solid;
+  }
+  .column.side {
+    width: 15%;
+    border-color: saddlebrown;
+    font-family: sans-serif;
+    padding-bottom: 100px;
+    float: left;
+
+  }
+  .column.middle {
+    width: 75%;
+    border-color: saddlebrown;
+    font-family: sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 296px;
+ }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  .table, th, td {
+    border: 2px solid black;
+    min-width: 1000px;
+}
+  .column.middle2 {
+    width: 75%;
+    border-color: saddlebrown;
+    font-family: sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 418px;
+}
+    .column.side2 {
+      width: 15%;
+      border-color: saddlebrown;
+      font-family: sans-serif;
+      padding-bottom: 86px;
+      padding-right:5px;
+      padding-top: 20px;
+      padding-left: 1px;
+}
+  .column.middle3 {
+    width: 75%;
+    border-color: saddlebrown;
+    font-family: sans-serif;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+  .text-left{
+    text-align: center;
+  }
+  /*COLOR OF LINKS IN NAVBAR*/
+  a:link {
+    color: black;
+    margin: 20px;
+    align: center;
+    padding: 15px;
+  }
+  a:visited {
+    color: black;
+}
+  a:hover{
+    background-color: tan;
+  }

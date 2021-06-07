@@ -44,22 +44,23 @@
 
 /*This is the div created specifically for the transition on the title of AIprojectbad.html, it is a normal title div with height, width, and transition. */
    .transition {
-     width: 1200px;
+     width: 800px;
      transition: 5s;
      color: #592d80;
      font-family: "Verdana", sans serif;
      font-size: 17px;
-     margin-left: 30px;
-     margin-right: 30px;
      margin-top: 30px;
+     /*margin-left: 30px;
+     margin-right: 30px;
      margin bottom: 30px;
-     padding: 10px;
+     padding: 10px;*/
      height: 120px;
+     align: left;
    }
 
 /*This is the hover funtion for the title transition above, this is what the title transforms into. It changes colors, sizes, and the corners round. */
    .transition:hover {
-     width: 800px;
+     width: 870px;
      color: #fff785;
      background-color: #592d80;
      border-radius: 6px;
@@ -135,25 +136,25 @@
 /*Thia div is used to define the animation that moves the first picture back and forth, the picture is the background image. */
   .picmove {
     background-image: url('robot.png');
-    width: 900px;
+    width: 700px;
     height: 550px;
     animation-name: picmove;
-    animation-duration: 6s;
+    animation-duration: 4s;
     position: relative;
   }
 
 /*This is the code for the first picture move animation, it simply moves the image/div back and forth */
 @keyframes picmove {
   0% {left: 0px;}
-  50% {left: 280px;}
+  50% {left: 60px;}
   100% {left: 0px;}
 }
 
 /*Thia div is used to define the animation that moves the second picture back and forth, the picture is the background image. */
   .picmove2 {
     background-image: url('beePic.png');
-    width: 900px;
-    height: 550px;
+    width: 680px;
+    height: 350px;
     animation-name: picmove;
     animation-duration: 6s;
     position: relative;
